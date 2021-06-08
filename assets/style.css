@@ -1,0 +1,8 @@
+.dark{--color-primary:#232323;--color-secondary:#5c5c5c;--color-3:#404040;--accent-color:rgb(0, 194, 42);--font-color:#fff}
+.light{--color-primary:#fff;--color-secondary:#a8a8a8;--color-3:#bbb;--accent-color:rgb(29, 73, 216);--font-color:#000}
+body{transition:all .5s ease-in-out;background-color:var(--color-primary);color:var(--font-color)}
+#theme{position:fixed;bottom:0;right:0;margin:1vw;border-radius:50%;padding:7px;transition:all .2s ease-in-out;border:none;background-color:var(--color-secondary)}
+#theme:hover{background-color:var(--color-3)}
+#nameSearch{background-color:var(--color-secondary);color:var(--font-color);border:none}
+input:focus,select{outline:0;border:none}
+li{font-size:1.2rem;transition:all .4s ease-out;opacity:0}

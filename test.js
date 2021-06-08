@@ -1,1 +1,0 @@
-require('fs').writeFileSync('marray.json',JSON.stringify([...new Set(require('./tmp.json'))].sort()))

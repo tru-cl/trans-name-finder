@@ -1,9 +1,9 @@
 $(document).ready(async () => {
+    if (window.location.href !== "https://tru-cl.github.io/trans-name-finder/" && window.location.href.includes('tru-cl.github.io')) window.location =  "https://tru-cl.github.io/trans-name-finder/"
     if (/*@cc_on!@*/false) {
         alert('IE is not fully supported. It is HIGHLY recommended you upgrade to a newer browser, for security reasons.');
     } else
         (() => {
-
             const themeNow = localStorage.getItem("theme");
             if (themeNow == "dark") {
                 document.body.classList.toggle("dark");
@@ -61,7 +61,7 @@ $(document).ready(async () => {
         return concatArray;
         // will return an array without duplicates, sorted by similarity to original name
     }
-    var fetchTMP = await fetch(`${window.location.origin}/assets/namelist.json`)
+    var fetchTMP = await fetch(`${window.location.href}/assets/namelist.json`)
     var namelist = await fetchTMP.json()
     var updateFunc = () => {
 
